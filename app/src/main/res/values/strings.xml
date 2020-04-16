@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">ListView and ListAdapter</string>
+    <string name="select">Выбрать…</string>
 </resources>
