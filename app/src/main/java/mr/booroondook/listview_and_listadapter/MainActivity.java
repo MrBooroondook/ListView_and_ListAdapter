@@ -10,16 +10,15 @@ import android.widget.ListView;
 import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
-    private TextView textView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        final TextView textView = findViewById(R.id.text_view);
         final String[] lastNames = getResources().getStringArray(R.array.last_names);
         ListView listView = findViewById(R.id.list_view);
-        textView = findViewById(R.id.text_view);
 
         listView.setAdapter(new ArrayAdapter<>(this,
                 android.R.layout.simple_list_item_1,
